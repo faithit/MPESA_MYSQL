@@ -1,0 +1,20 @@
+{%extends 'base.html' %}
+{%block title%}ADD PRODUCT{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>ADD NEW PRODUCT</h2>
+            <form method="POST" enctype="multipart/form-data">
+                {%csrf_token%}
+                {{form.as_p}}
+                <button type="submit"class="btn  btn-success">ADD Product</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+{%endblock%}

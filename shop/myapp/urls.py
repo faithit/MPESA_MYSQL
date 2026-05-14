@@ -8,7 +8,8 @@ urlpatterns = [
     path('addproduct/',views.add_product,name='addproduct'),
     path('home/',views.home,name='home'),
     path('callback/',views.callback,name='callback'),
-    path('pay/',views.lipa_na_mpesa_online,name='pay')
+    path('pay/',views.lipa_na_mpesa_online,name='pay'),
+    path('paymentinfo/',views.payment_info,name='paymentinfo'),
 
 ]
 if settings.DEBUG:

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Payment Success{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light text-center">
+    <div>
+        <div class="text-primary fs-1 mb-4">&#10004;</div> <!-- Big blue tick -->
+        <h1 class="mb-3">Payment Request Sent!</h1>
+        <p class="mb-3">Please check your phone and complete the payment.</p>
+        <a href="{% url 'home' %}" class="btn btn-primary">Go Back to Payment Page</a>
+    </div>
+</div>
+{% endblock %}
